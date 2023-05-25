@@ -7,31 +7,31 @@
 	</head>
 	<body>
 		<div id='root'>
-			<h2>Perspective Playground</h2>
+			<h1>Perspective Playground</h1>
 			<main>
-			<section class='settings'>
-				<div class='settings-container'>
-					<label>perspective: {{ perspective }}px;</label>
-					<input type='range' min='0' max='999' v-model='perspective' />
-			
-					<label>rotateX: {{ rotateX }}deg; </label>
-					<input type='range' min='-180' max='180' v-model='rotateX' />
-			
-					<label>rotateY: {{ rotateY }}deg;</label>
-					<input type='range' min='-180' max='180' v-model='rotateY' />
-			
-					<label>rotateZ: {{ rotateZ }}deg;</label>
-					<input type='range' min='-180' max='180' v-model='rotateZ' />
-			
-					<button type='button' @click='reset'>Reset</button>
-					<button type='button'>Copy</button>
-				</div>
-			</section>
-			<section class='output'>
-				<div class='box-container'>
-					<div :style='box' class='box'></div>
-				</div>
-			</section>
+				<section class='settings'>
+					<div class='settings-container'>
+						<label>perspective: {{ perspective }}px;</label>
+						<input type='range' min='0' max='999' v-model='perspective' />
+				
+						<label>rotateX: {{ rotateX }}deg; </label>
+						<input type='range' min='-180' max='180' v-model='rotateX' />
+				
+						<label>rotateY: {{ rotateY }}deg;</label>
+						<input type='range' min='-180' max='180' v-model='rotateY' />
+				
+						<label>rotateZ: {{ rotateZ }}deg;</label>
+						<input type='range' min='-180' max='180' v-model='rotateZ' />
+				
+						<button type='button' @click='reset'>Reset</button>
+						<button type='button' @click='copy'>Copy</button>
+					</div>
+				</section>
+				<section class='output'>
+					<div class='box-container'>
+						<div :style='box' class='box'></div>
+					</div>
+				</section>
 			</main>
 		</div>
 
