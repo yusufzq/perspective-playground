@@ -18,7 +18,7 @@ Vue
 			async copy() {
 				let selector = `transform: ${this.box.transform}`;
 
-				await navigator.clipboard.writeText(selector);
+				await navigator.clipboard.writeText(selector + ';');
 
 				alert('CSS Selector Copied to ClipBoard');
 			}
