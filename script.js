@@ -25,7 +25,7 @@ Vue
 		},
 		computed: {
 			box() {
-				return {transform: `perspective(${this.perspective}px) rotateX(${this.rotateX}deg) rotateY(${this.rotateY}deg) rotateZ(${this.rotateZ}deg)`}
+				return {transform: `perspective(${this.perspective}px) rotateX(${this.rotateX}deg) rotateY(${this.rotateY}deg) rotateZ(${this.rotateZ}deg)`};
 			}
 		}
 	})
